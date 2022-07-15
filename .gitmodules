@@ -1,3 +1,0 @@
-[submodule "igraph"]
-	path = igraph
-	url = git@github.com:igraph/igraph.git

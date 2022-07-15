@@ -1,10 +1,9 @@
+use std::env;
 use std::error::Error;
-use std::fmt::format;
 use std::path::PathBuf;
-use std::{env, fs};
 
 fn main() -> Result<(), Box<dyn Error>> {
-    let make = cmake::Config::new("./igraph")
+    let make = cmake::Config::new("./igraph-0.9.9")
         .env("IGRAPH_STATIC", "1")
         .build();
 
